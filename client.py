@@ -18,10 +18,10 @@ def receiver(name, sock):
 
 
 # host = socket.gethostbyname(socket.gethostname())
-host = socket.gethostbyname('')
+host = socket.gethostbyname('https://chatterpy.herokuapp.com')
 port = 0
 
-server = (host, 9092)
+server = (host, 80)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
