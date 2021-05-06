@@ -5,8 +5,7 @@ import os
 # host = socket.gethostbyname(socket.gethostname())
 host = '0.0.0.0'
 # port = 9092
-port = os.environ.get("PORT")
-port = int(port)
+port = int(os.environ.get("PORT", 9092))
 
 clients = []
 

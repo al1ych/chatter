@@ -17,11 +17,11 @@ def receiver(name, sock):
       pass
 
 
-# host = socket.gethostbyname(socket.gethostname())
-host = socket.gethostbyname('https://chatterpy.herokuapp.com')
+host = socket.gethostbyname(socket.gethostname())
+# host = socket.gethostbyname('http://chatterpy.herokuapp.com')
 port = 0
 
-server = (host, 80)
+server = (host, port)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((host, port))
