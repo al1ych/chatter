@@ -1,8 +1,10 @@
 import socket
 import time
+import os
 
 host = socket.gethostbyname(socket.gethostname())
-port = 9092
+# port = 9092
+port = os.environ.get("PORT", 9092)
 
 clients = []
 

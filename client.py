@@ -18,7 +18,7 @@ def receiver(name, sock):
 
 
 # host = socket.gethostbyname(socket.gethostname())
-host = socket.gethostbyname('localhost')
+host = socket.gethostbyname('')
 port = 0
 
 server = (host, 9092)
