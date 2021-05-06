@@ -2,7 +2,8 @@ import socket
 import time
 import os
 
-host = socket.gethostbyname(socket.gethostname())
+# host = socket.gethostbyname(socket.gethostname())
+host = '0.0.0.0'
 # port = 9092
 port = os.environ.get("PORT", 9092)
 port = int(port)
